@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "operator.h"
 #include "fichier.h"
+#include "liste.h"
 
 void exercice41();
+void exercice47();
 void exercice42() {
 
     int choix;
@@ -65,7 +67,7 @@ int main() {
             break;
 
         case 7:
-            printf("Exercice 4.7 pas encore implemente.\n");
+            exercice47();
             break;
 
         default:
@@ -139,4 +141,32 @@ void exercice41() {
     }
 
     printf("Resultat : %d\n", resultat);
+}
+
+void exercice47() {
+
+    struct liste_couleurs ma_liste;
+
+    init_liste(&ma_liste);
+
+    struct couleur couleurs[10] = {
+        {0xFF, 0x00, 0x00, 0xFF},
+        {0x00, 0xFF, 0x00, 0xFF},
+        {0x00, 0x00, 0xFF, 0xFF},
+        {0xFF, 0xFF, 0x00, 0xFF},
+        {0xFF, 0x00, 0xFF, 0xFF},
+        {0x00, 0xFF, 0xFF, 0xFF},
+        {0x80, 0x80, 0x80, 0xFF},
+        {0xFF, 0xFF, 0xFF, 0xFF},
+        {0x00, 0x00, 0x00, 0xFF},
+        {0xFF, 0x80, 0x00, 0xFF}
+    };
+
+    for (int i = 0; i < 10; i++) {
+        insertion(&couleurs[i], &ma_liste);
+    }
+
+    printf("Liste des couleurs :\n");
+
+    parcours(&ma_liste);
 }
