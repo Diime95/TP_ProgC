@@ -212,7 +212,7 @@ int main() {
 }
 ```
 
-Assurez-vous que les résultats correspondent aux factorielles attendues pour ces nombres.
+Assurez-vous que les résultats correspondent aux factorielles attendues pour ces nombres. 
 
 ## Exercice 4.6 [★★★]
 
