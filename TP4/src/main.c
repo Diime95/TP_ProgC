@@ -1,7 +1,46 @@
 #include <stdio.h>
 #include "operator.h"
+#include "fichier.h"
 
 void exercice41();
+void exercice42() {
+
+    int choix;
+    char nomFichier[100];
+    char message[500];
+
+    printf("Que souhaitez-vous faire ?\n");
+    printf("1 - Lire un fichier\n");
+    printf("2 - Ecrire dans un fichier\n");
+
+    printf("Votre choix : ");
+    scanf("%d", &choix);
+
+    if (choix == 1) {
+
+        printf("Entrez le nom du fichier a lire : ");
+        scanf("%s", nomFichier);
+
+        lire_fichier(nomFichier);
+
+    } else if (choix == 2) {
+
+        printf("Entrez le nom du fichier dans lequel vous souhaitez ecrire : ");
+        scanf("%s", nomFichier);
+
+        getchar();
+
+        printf("Entrez le message a ecrire : ");
+        fgets(message, sizeof(message), stdin);
+
+        ecrire_dans_fichier(nomFichier, message);
+
+    } else {
+        printf("Choix invalide.\n");
+    }
+}
+
+void exercice42();
 
 int main() {
 
@@ -22,7 +61,7 @@ int main() {
             break;
 
         case 2:
-            printf("Exercice 4.2 pas encore implemente.\n");
+            exercice42();
             break;
 
         case 7:
