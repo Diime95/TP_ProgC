@@ -1,0 +1,5 @@
+VOLLE ; Tao ; 45 rue du tocard ; 19.00 ; 5.00
+CIFTI ; Halim ; 78 rue de l'enflure ; 1.00 ; 2.00
+MEZOUAR ; Mehdi ; 34 rue du bogoss ; 20.00 ; 36.00
+LETERRIER ; Pierre ; 63 rue de la salle de sport ; 5.00 ; 16.00
+CLAUDON ; Antoine ; 1 rue du restaurant chinois ; 20.00 ; 0.00
