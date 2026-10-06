@@ -1,0 +1,5 @@
+Bonjour ceci est un test
+exemple de phrase exemple de phrase
+Bonjour encore
+exemple de phrase ici
+Fin du fichier
